@@ -1,16 +1,12 @@
-from .Process import Process
-from .ObservableQueue import ObservableQueue
-from .ObserverQueue import ObserverQueue
-from .Event import Event
-import queue as QueueException
 from multiprocessing import Queue
-from multiprocessing import Process as BaseProcess
+from .Process import Process
+from .OutputQueueConnectors import OutputQueuesConnectors
+from .InputQueueConnectors import InputQueuesConnectors
+import queue as QueueException
 
 __all__ = ['Process',
-           'ObservableQueue',
-           'ObserverQueue',
-           'Event',
+           'OutputQueuesConnectors',
            'QueueException',
            'Queue',
-           'BaseProcess'
+           'InputQueuesConnectors',
            ]
